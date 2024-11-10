@@ -1,17 +1,17 @@
 #include<stdio.h>
-int sod(int);
+int Sod(int );
 int main()
 {
-    int n=0;
-    scanf("%d",&n);
-    printf("sum of digits of %d is %d ",n,sod);
+    int no=0;
+    scanf("%d",&no);
+    printf("Sum of digits of no %d is %d",no,Sod(no));
     return 0;
 }
-int sod()
+int Sod(int n)
 {
     if(n<=0)return 0;
-    if(n<=1)return 1;
-    printf("n%10")*sod(n/10);
+    if(n==1)return n;
+    return (n%10)+Sod(n/10);
 }
 
 
