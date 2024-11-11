@@ -39,7 +39,7 @@ Node delete(Node root)
 {
     if(root==NULL)
     {
-        printf("Stack Underflowmn\n");
+        printf("Stack Underflow\n");
         exit(1);
     }
     else

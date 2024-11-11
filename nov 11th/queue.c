@@ -44,7 +44,6 @@ Node delete(Node root)
         Node temp=root;
         while(temp ->next ->next!=NULL)
             temp=temp->next;
-        del=temp ->next;
         printf("poped element %d",temp->data);
         root=root->next;
         free(temp);
